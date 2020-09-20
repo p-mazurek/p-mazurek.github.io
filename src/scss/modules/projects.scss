@@ -1,0 +1,16 @@
+.projects {
+  padding: 64px 16px 88px;
+  &__description {
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: #425a70;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    color: #234361;
+  }
+}
