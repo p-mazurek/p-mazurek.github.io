@@ -1,0 +1,46 @@
+.hero {
+  padding: 96px 16px 0;
+  text-align: center;
+
+  &__bracket,
+  &__cloud {
+    display: none;
+  }
+  &__description {
+    color: #425a70;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 300;
+    padding: 16px 0 48px;
+  }
+  &__image {
+    width: 96px;
+    margin: 0 auto;
+    display: block;
+  }
+  &__link {
+    display: inline-block;
+    width: 230px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-decoration: none;
+    color: white;
+    padding:4px 24px;
+    border-radius: 64px;
+    margin-bottom: 88px;
+    background-color: #4DA8FF;
+  }
+  &__special {
+    color: #1070ca;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    color: #234361;
+
+  }
+}
