@@ -1,10 +1,14 @@
 @import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
 @import "modules/hero.scss";
 @import "modules/skills.scss";
 @import "modules/projects.scss";
 @import "modules/contact.scss";
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: Nunito, sans-serif;
 }

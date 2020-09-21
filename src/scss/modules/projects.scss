@@ -5,6 +5,7 @@
     line-height: 32px;
     text-align: center;
     color: #425a70;
+    margin-bottom: 46px;
   }
   &__title {
     font-weight: bold;
@@ -12,5 +13,56 @@
     line-height: 48px;
     text-align: center;
     color: #234361;
+  }
+}
+
+.project {
+  font-family: "Roboto Mono", sans-serif;
+  max-width: 580px;
+  background: #212528;
+  border-radius: 16px;
+  color: #808082;
+  overflow: hidden;
+  padding: 0 16px 48px 16px;
+  * {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+
+  &__description:nth-of-type(1) > span:last-child {
+    color: #a3a3a3;
+  }
+  &__description:nth-of-type(2) > span:last-child a,
+  &__description:nth-of-type(3) > span:last-child a {
+    color: #14b5d0;
+  }
+  &__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #464a4d;
+    margin-right: 8px;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 102px 1fr;
+    column-gap: 10px;
+  }
+  &__label {
+    text-align: right;
+  }
+  &__logo {
+    margin: 24px 0;
+  }
+  &__title > span:last-child {
+    color: white;
+    font-weight: bold;
+  }
+  &__window {
+    height: 40px;
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
   }
 }

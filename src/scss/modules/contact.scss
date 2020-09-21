@@ -1,0 +1,44 @@
+.contact {
+  background-color: #dbeaf7;
+  padding: 64px 16px 88px;
+  text-align: center;
+  &__description {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    color: #425a70;
+    margin-bottom: 56px;
+  }
+
+  &__links {
+    width: 80%;
+    margin: 0 auto;
+  }
+  &__list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 64px;
+    padding: 0;
+  }
+  &__mail {
+    display: inline-block;
+    width: 230px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-decoration: none;
+    color: white;
+    padding: 4px 24px;
+    border-radius: 64px;
+    margin-bottom: 88px;
+    background-color: #4da8ff;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #234361;
+  }
+}
