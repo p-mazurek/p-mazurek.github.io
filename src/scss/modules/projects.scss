@@ -18,7 +18,7 @@
 
 .project {
   font-family: "Roboto Mono", sans-serif;
-  max-width: 580px;
+
   background: #212528;
   border-radius: 16px;
   color: #808082;
@@ -64,5 +64,17 @@
     background-color: #1e1e1e;
     display: flex;
     align-items: center;
+  }
+}
+
+.project-grid {
+  display: grid;
+  column-gap: 24px;
+  row-gap: 24px;
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: $desktop) {
+    padding: 0 40px 0 40px;
   }
 }

@@ -11,8 +11,12 @@
   }
 
   &__links {
-    width: 80%;
     margin: 0 auto;
+
+    @media (min-width: $desktop) {
+      display: flex;
+      justify-content: center;
+    }
   }
   &__list {
     list-style-type: none;
@@ -21,9 +25,12 @@
     justify-content: space-around;
     margin-bottom: 64px;
     padding: 0;
+    @media (min-width: $desktop) {
+      justify-content: flex-start;
+    }
   }
   &__mail {
-    display: inline-block;
+    display: block;
     width: 230px;
     height: 40px;
     font-size: 20px;
@@ -32,8 +39,13 @@
     color: white;
     padding: 4px 24px;
     border-radius: 64px;
-    margin-bottom: 88px;
+    margin: 0 auto 88px auto;
+
     background-color: #4da8ff;
+    @media (min-width: $desktop) {
+      margin: 23px 0 0 110px;
+      display: block;
+    }
   }
   &__title {
     font-weight: bold;

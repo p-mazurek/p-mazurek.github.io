@@ -11,8 +11,6 @@
   }
 }
 .skills-container {
-  max-width: 400px;
-
   &__description {
     text-align: center;
     font-size: 24px;
@@ -25,12 +23,14 @@
     text-align: center;
     display: block;
     padding: 64px 0 16px;
-
   }
 }
 .skills-list {
   list-style-type: none;
   font-weight: 300;
+  max-width: 200px;
+  margin: 0 auto;
+
   &__item {
     color: #dbeaf7;
     font-size: 16px;
@@ -50,14 +50,21 @@
       border-radius: 50%;
       width: 3px;
       height: 3px;
-      top: 17px
+      top: 17px;
     }
     &--green::before {
       background: url("/src/assets/img/small-tick.png") no-repeat center;
-
     }
     &--white::before {
       background: url("/src/assets/img/small-tick-white.png") no-repeat center;
     }
+  }
+}
+.skills-grid {
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1184px;
+    margin: 0 auto;
   }
 }

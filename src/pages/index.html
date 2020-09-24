@@ -34,10 +34,11 @@
         <span class="hero__cloud">Hey there!
           <span class="hero__hand-shake">👋</span>
         </span>
+        <img class="hero__knot" src="/src/assets/img/knot.svg" alt="">
       </div>
       <div class="hero__intro">
         <h1 class="hero__title">My name is Piotrek and I’m an aspiring <span class="hero__special">Frontend
-            developer</span>.
+            developer.</span>
         </h1>
         <p class="hero__description">You might be interested in checking the list of <a href="#skills"
             class="hero__special">my
@@ -46,58 +47,100 @@
           Currently I’m looking for a new challenges so if you have one - <a href="#contact"
             class="hero__special">contact me</a>
           😊</p>
-        <div class="hero__bracket"></div>
-        <div class="hero__bracket"></div>
+        <div class="hero__bracket hero__bracket--left"></div>
+        <div class="hero__bracket hero__bracket--right"></div>
       </div>
       <a class="hero__link" href="mailto:mazurekp93@gmail.com">mazurekp93@gmail.com</a>
     </section>
     <section class="skills" id="skills">
       <h2 class="skills__title">My skills</h2>
-      <article class="skills-container">
-        <span class="skills-container__emoji">💪</span>
-        <h3 class="skills-container__description">Working knowledge</h3>
-        <ul class="skills-list">
-          <li class="skills-list__item skills-list__item--green">Semantic HTML5</li>
-          <li class="skills-list__item skills-list__item--green">Flexbox</li>
-          <li class="skills-list__item skills-list__item--green">Markdown</li>
-          <li class="skills-list__item skills-list__item--green">JS: local storage</li>
-          <li class="skills-list__item skills-list__item--green">Figma</li>
-          <li class="skills-list__item skills-list__item--green">CSS grid</li>
-          <li class="skills-list__item skills-list__item--green">Forms</li>
-          <li class="skills-list__item skills-list__item--green">JS: DOM manipulations</li>
-          <li class="skills-list__item skills-list__item--green">SASS</li>
-        </ul>
-      </article>
-      <article class="skills-container">
-        <span class="skills-container__emoji">🤔</span>
-        <h3 class="skills-container__description">Know something about</h3>
-        <ul class="skills-list">
-          <li class="skills-list__item skills-list__item--white">JavaScript ES6 + features</li>
-          <li class="skills-list__item skills-list__item--white">CSS animations</li>
-          <li class="skills-list__item skills-list__item--white">Working with API</li>
-          <li class="skills-list__item skills-list__item--white">NPM Scripts</li>
-          <li class="skills-list__item skills-list__item--white">Git</li>
-          <li class="skills-list__item skills-list__item--white">Accessibility</li>
-        </ul>
-      </article>
-      <article class="skills-container">
-        <span class="skills-container__emoji">🎓</span>
-        <h3 class="skills-container__description">Want to learn</h3>
-        <ul class="skills-list">
-          <li class="skills-list__item skills-list__item--dot">React JS</li>
-          <li class="skills-list__item skills-list__item--dot">Node JS</li>
-          <li class="skills-list__item skills-list__item--dot">Electron</li>
-          <li class="skills-list__item skills-list__item--dot">Typescript</li>
-          <li class="skills-list__item skills-list__item--dot">Gatsby</li>
-          <li class="skills-list__item skills-list__item--dot">Websockets</li>
-        </ul>
-      </article>
+      <div class="skills-grid">
+        <article class="skills-container">
+          <span class="skills-container__emoji">💪</span>
+          <h3 class="skills-container__description">Working knowledge</h3>
+          <ul class="skills-list">
+            <li class="skills-list__item skills-list__item--green">Semantic HTML5</li>
+            <li class="skills-list__item skills-list__item--green">Flexbox</li>
+            <li class="skills-list__item skills-list__item--green">Markdown</li>
+            <li class="skills-list__item skills-list__item--green">JS: local storage</li>
+            <li class="skills-list__item skills-list__item--green">Figma</li>
+            <li class="skills-list__item skills-list__item--green">CSS grid</li>
+            <li class="skills-list__item skills-list__item--green">Forms</li>
+            <li class="skills-list__item skills-list__item--green">JS: DOM manipulations</li>
+            <li class="skills-list__item skills-list__item--green">SASS</li>
+          </ul>
+        </article>
+        <article class="skills-container">
+          <span class="skills-container__emoji">🤔</span>
+          <h3 class="skills-container__description">Know something about</h3>
+          <ul class="skills-list">
+            <li class="skills-list__item skills-list__item--white">JavaScript ES6 + features</li>
+            <li class="skills-list__item skills-list__item--white">CSS animations</li>
+            <li class="skills-list__item skills-list__item--white">Working with API</li>
+            <li class="skills-list__item skills-list__item--white">NPM Scripts</li>
+            <li class="skills-list__item skills-list__item--white">Git</li>
+            <li class="skills-list__item skills-list__item--white">Accessibility</li>
+          </ul>
+        </article>
+        <article class="skills-container">
+          <span class="skills-container__emoji">🎓</span>
+          <h3 class="skills-container__description">Want to learn</h3>
+          <ul class="skills-list">
+            <li class="skills-list__item skills-list__item--dot">React JS</li>
+            <li class="skills-list__item skills-list__item--dot">Node JS</li>
+            <li class="skills-list__item skills-list__item--dot">Electron</li>
+            <li class="skills-list__item skills-list__item--dot">Typescript</li>
+            <li class="skills-list__item skills-list__item--dot">Gatsby</li>
+            <li class="skills-list__item skills-list__item--dot">Websockets</li>
+          </ul>
+        </article>
+      </div>
     </section>
     <section class="projects" id="projects">
       <h2 class="projects__title">Recent Projects</h2>
       <p class="projects__description">I started my frontend developer path in 2003. Since then, I’ve built some
         projects. Here’s the list of the things I’ve done so far.</p>
       <div class="project-grid">
+        <article class="project">
+          <div class="project__window">
+            <span class="project__dot"></span>
+            <span class="project__dot"></span>
+            <span class="project__dot"></span>
+          </div>
+          <img class="project__logo" src="../assets/img/gh-logo.svg" alt="Github's logo">
+          <div class="project__content">
+            <h3 class="project__title project__grid">
+              <span class="project__label">project:</span>
+              <span>podlaski git</span>
+            </h3>
+            <p class="project__description project__grid"><span class="project__label">description:</span>
+              <span>podlaskie aliasy dla gitowych komend</span></p>
+            <p class="project__description project__grid"><span class="project__label">demo:</span>
+              <span>&lt;<a title="podlaski git - demo" href="#">see_here</a>&gt;</span></p>
+            <p class="project__description project__grid"><span class="project__label">github:</span>
+              <span>&lt;<a title="podlaski git - code" href="#">source_code</a>&gt;</span></p>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project__window">
+            <span class="project__dot"></span>
+            <span class="project__dot"></span>
+            <span class="project__dot"></span>
+          </div>
+          <img class="project__logo" src="../assets/img/gh-logo.svg" alt="Github's logo">
+          <div class="project__content">
+            <h3 class="project__title project__grid">
+              <span class="project__label">project:</span>
+              <span>podlaski git</span>
+            </h3>
+            <p class="project__description project__grid"><span class="project__label">description:</span>
+              <span>podlaskie aliasy dla gitowych komend</span></p>
+            <p class="project__description project__grid"><span class="project__label">demo:</span>
+              <span>&lt;<a title="podlaski git - demo" href="#">see_here</a>&gt;</span></p>
+            <p class="project__description project__grid"><span class="project__label">github:</span>
+              <span>&lt;<a title="podlaski git - code" href="#">source_code</a>&gt;</span></p>
+          </div>
+        </article>
         <article class="project">
           <div class="project__window">
             <span class="project__dot"></span>
@@ -132,9 +175,9 @@
           <li class="contact__item"><a class="contact__link" href="https://www.facebook.com/piotrekmaz9"><img
                 src="../assets/img/FB-icon.svg" alt="Piotr Mazurek's facebook profile"></a></li>
         </ul>
-
+        <a class="contact__mail" href="mailto:mazurekp93@gmail.com">mazurekp93@gmail.com</a>
       </div>
-      <a class="contact__mail" href="mailto:mazurekp93@gmail.com">mazurekp93@gmail.com</a>
+
     </section>
   </main>
 </body>

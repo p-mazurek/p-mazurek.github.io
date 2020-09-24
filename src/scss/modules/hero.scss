@@ -2,9 +2,50 @@
   padding: 96px 16px 0;
   text-align: center;
 
-  &__bracket,
+  &__bracket {
+    display: none;
+    &--right {
+      @media (min-width: $desktop) {
+        display: block;
+        position: absolute;
+        top: -40px;
+        right: -80px;
+        width: 84px;
+        height: 255px;
+        background: url(/src/assets/img/bracket-right.svg) center no-repeat;
+        background-size: 90%;
+      }
+    }
+    &--left {
+      @media (min-width: $desktop) {
+        display: block;
+        position: absolute;
+        top: -40px;
+        left: -80px;
+        width: 84px;
+        height: 255px;
+        background: url(/src/assets/img/bracket-left.svg) center no-repeat;
+        background-size: 90%;
+      }
+    }
+  }
   &__cloud {
     display: none;
+    @media (min-width: $tablet) {
+      box-sizing: border-box;
+      border-radius: 16px;
+      font-size: 32px;
+      line-height: 72px;
+      text-align: center;
+      display: block;
+      width: 230px;
+      height: 72px;
+      position: absolute;
+      top: -20%;
+      right: 7%;
+      background-color: #1070ca;
+      color: #fff;
+    }
   }
   &__description {
     color: #425a70;
@@ -17,6 +58,35 @@
     width: 96px;
     margin: 0 auto;
     display: block;
+    @media (min-width: $tablet) {
+      width: 178px;
+    }
+  }
+  &__image-box {
+    @media (min-width: $tablet) {
+      position: relative;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  }
+  &__intro {
+    @media (min-width: $tablet) {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+    @media (min-width: $desktop) {
+      position: relative;
+    }
+  }
+  &__knot {
+    display: none;
+    @media (min-width: $tablet) {
+      display: block;
+      width: 20px;
+      position: absolute;
+      top: 30px;
+      right: 230px;
+    }
   }
   &__link {
     display: inline-block;
